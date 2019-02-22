@@ -12,3 +12,16 @@ h1 {
   font-size: 60px;
   font-weight: bold;
 }
+.bg-img {
+  background-image: url("../img/suggest.jpeg");
+  height: 800px;
+ width: 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ font-size: 25px;
+}
+#restartQuiz {
+  display: none;
+}

@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-
 $("form#quiz").submit(function(event) {
 
   var nameInput1 = $("input#name").val();
@@ -15,13 +13,9 @@ $("form#quiz").submit(function(event) {
   var food = parseInt($("#food").val());
 
 var sum = weather + enjoy + money + nature + food
-
-
-
 if (sum <= 5) {
-  // alert('Please make a selection.');
-  $("#country").empty().append("LAS VEGAS");
-  $("#answer").show();
+  $("#country").append("LAS VEGAS");
+  $("#answer").slideUp();
 } else if (sum <= 10) {
   $("#country").append("Switzerland");
   $("#answer").show();
@@ -32,11 +26,17 @@ if (sum <= 5) {
   $("#country").append("Hawaii");
   $("#answer").show();
 }
-
-
+  $("#restartQuiz").show();
+  $(".hide-test").hide();
   $(".name").text(nameInput);
   $(".date").text(date);
   // $("#country").text(result);
+
   event.preventDefault();
+  });
+  $("form#restartQuiz").submit(function(event) {
+    event.preventDefault();
+
+    location.reload();
   });
 });
