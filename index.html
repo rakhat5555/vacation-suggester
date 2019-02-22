@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/styles.css" type="text/css">
-<script scr="js/jquery-3.3.1.js"></script>
-<script scr="js/scripts.js"></script>
+  debugger;
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="js/jquery-3.3.1.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
   <title>vacation-suggester</title>
 </head>
 <body>
-  <div class="container">
+    <div class="container">
     <div class="jumbotron">
       <div class="well">
         <h1>VACATION SUGGESTER</h1>
@@ -16,21 +18,25 @@
           This site will suggest your next ideal vacation destination based on your responses to a series of questions.</p><br>
           <h3>Travel questionaire :</h3>
           <p>Get ready to find your next perfect vacation destination! Please answer the following questions</p>
-          <form id="question">
+
+          <form id="quiz">
+            <div class="form-group">
             <label for="name">Enter your name:</label>
             <input id="name" type="text">
+            </div
             <div class="form-group">
             <label for="date">What is your preferred travel date?</label>
             <input id="date" class="form-control" type="date">
           </div
-          <p>I prefer:</p>
+        <label for="weather">i prefer:</label>
           <select class="form-control" id="weather">
             <option value="1">warm weather</option>
             <option value="2">snow</option>
             <option value="3">no preference</option>
             <option value="4">sunny</option>
           </select>
-          <p>What I picture my ideal vacation, I see myself...</p>
+          <label for="enjoy">What I picture my ideal vacation, I see myself...</label>
+
           <select class="form-control" id="enjoy">
             <option value="1">Exploring a large city</option>
             <option value="2">Chilling out with some winter sports</option>
@@ -39,10 +45,9 @@
           </select>
           <p>When I go on vacation the cost of things is...</p>
           <select class="form-control" id="money">
-            <option value="1">No object</option>
-            <option value="2">Not a big concern, as long as it's in my budget.</option>
-            <option value="3">Other/Doesn't Matter</option>
-            <option value="4">A big concern, getting the most for my money is important.h</option>
+            <option value="1">Not a big concern, as long as it's in my budget.</option>
+            <option value="2">Other/Doesn't Matter</option>
+            <option value="3">A big concern, getting the most for my money is important.h</option>
           </select>
           <p>On my typical trip I enjoy nature by...</p>
           <select class="form-control" id="nature">
@@ -56,14 +61,12 @@
             <option value="2">I like to sample the local food, and go out to eat often</option>
             <option value="3">I look for world class cuisine, fine wine, and meals to remember</option>
           </select>
-
             <button type="submit" class="btn">Submit!</button>
           </form>
-<div id="answer">
-  <p>Congratulations  <span class="name"></span>! Get ready to pack you bags on <span id=date></span> because your next vaction will be to:<br>
-   </p>
-  
-</div>
+        <div id="answer">
+          <p>Congratulations <span class="name"></span>! Get ready to pack you bags on <span class="date"></span>  because your next vacation will be to:<br>
+            <span id="country"></span>.</p>
+        </div>
 
 
       </div>

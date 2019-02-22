@@ -4,3 +4,11 @@ h1 {
   font-style: italic;
   font-size: 60px;
 }
+#answer {
+  display:none;
+}
+#country {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
