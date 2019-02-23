@@ -6,7 +6,7 @@
 
 ## Description
 
-_A webpage developed . An interactive web page with buttons exposing hidden messaging when engaged with._
+_A webpage that uses HTML, CSS, Bootstrap, JavaScript, and jQuery to assign users a vacation destination based on answers to a quiz._
 
 ## Setup/Installation Requirements
 
@@ -16,7 +16,7 @@ _A webpage developed . An interactive web page with buttons exposing hidden mess
 * _choose date_
 * _answer some questions_
 * _Click submit button to see result._
-* _click submit button to restart _
+* _Click submit button to restart. _
 
 
 ## Known Bugs
