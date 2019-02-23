@@ -14,16 +14,16 @@ $("form#quiz").submit(function(event) {
 
 var sum = weather + enjoy + money + nature + food
 if (sum <= 5) {
-  $("#country").append("LAS VEGAS");
-  $("#answer").slideUp();
+    $("#answer").show();
+  $(".vegas").show();
 } else if (sum <= 10) {
-  $("#country").append("Switzerland");
+  $(".switzerland").show();
   $("#answer").show();
 }else if (sum <= 14) {
-  $("#country").append("Kyrgyzstan");
+  $(".kyrgyzstan").show();
   $("#answer").show();
 }else if (sum <= 18) {
-  $("#country").append("Hawaii");
+  $(".hawaii").show();
   $("#answer").show();
 }
   $("#restartQuiz").show();

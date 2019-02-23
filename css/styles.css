@@ -9,8 +9,9 @@ h1 {
 }
 #country {
   text-align: center;
-  font-size: 60px;
+  font-size: 20px;
   font-weight: bold;
+  display: none;
 }
 .bg-img {
   background-image: url("../img/suggest.jpeg");
@@ -24,4 +25,8 @@ h1 {
 }
 #restartQuiz {
   display: none;
+}
+img {
+  height: 600px;
+ width: 100%;
 }
